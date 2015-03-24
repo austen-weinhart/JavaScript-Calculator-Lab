@@ -1,0 +1,44 @@
+  * {
+    background-color: #35477F;
+    color: #273C7F;
+  }
+
+.container {
+  /*border: 1px solid #6B8EFF;*/
+  /*border-radius: 10px;*/
+  background-color: #5571CC;
+  width: 540px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+}
+
+button {
+  width: 80px;
+  font-size: 40px;
+  /*border-radius: 10px;*/
+  background-color: #B7C8FF;
+  margin: 5px;
+  /*border: 1px solid #6B8EFF;*/
+  border: none;
+  /*background: none;*/
+}
+
+#equals {
+  width: 365px;
+}
+
+#display {
+  /*border: 1px solid #6B8EFF;*/
+  border: none;
+  /*border-radius: 10px;*/
+  width: 345px;
+  height: 40px;
+  /*border-radius: 10px;*/
+  text-align: right;
+  margin: 10px auto;
+  font-size: 40px;
+  background-color: #B7C8FF;
+  font-family: sans-serif;
+  padding: 10px;
+}
