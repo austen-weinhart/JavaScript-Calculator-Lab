@@ -10,29 +10,22 @@ myArray = [];
 function plus(x,y) {
   currentValue = (+x) + (+y);
   document.getElementById("display").value = currentValue;
-  console.log(currentValue);
 }
 
-function glenn(){
-  console.log('work mofo!');
-}
 
 function subtraction(x,y) {
  currentValue = (x - y);
   document.getElementById("display").value = currentValue;
-  console.log(currentValue);
 }
 
 function multiplication(x,y) {
   currentValue = (x * y);
   document.getElementById("display").value = currentValue;
-  console.log(currentValue);
 }
 
 function division(x,y) {
   currentValue = (x / y);
   document.getElementById("display").value = currentValue;
-  console.log(currentValue);
 }
 
 /////////////////////////////////////////
@@ -40,7 +33,6 @@ function division(x,y) {
 /////////////////////////////////////////
 var one = document.getElementById("one");
 one.addEventListener("click", function(){
-  console.log(1);
   function newValue() {
     currentValue += "1";
     document.getElementById("display").value = currentValue;
@@ -50,7 +42,6 @@ one.addEventListener("click", function(){
 
 var two = document.getElementById("two");
 two.addEventListener("click", function(){
-  console.log(2);
   function newValue() {
     currentValue += "2";
     document.getElementById("display").value = currentValue;
@@ -60,7 +51,6 @@ two.addEventListener("click", function(){
 
 var three = document.getElementById("three");
 three.addEventListener("click", function(){
-  console.log(3);
   function newValue() {
     currentValue += "3";
     document.getElementById("display").value = currentValue;
@@ -70,7 +60,6 @@ three.addEventListener("click", function(){
 
 var four = document.getElementById("four");
 four.addEventListener("click", function(){
-  console.log(4);
   function newValue() {
     currentValue += "4";
     document.getElementById("display").value = currentValue;
@@ -80,7 +69,6 @@ four.addEventListener("click", function(){
 
 var five = document.getElementById("five");
 five.addEventListener("click", function(){
-  console.log(5);
   function newValue() {
     currentValue += "5";
     document.getElementById("display").value = currentValue;
@@ -90,7 +78,6 @@ five.addEventListener("click", function(){
 
 var six = document.getElementById("six");
 six.addEventListener("click", function(){
-  console.log(6);
   function newValue() {
     currentValue += "6";
     document.getElementById("display").value = currentValue;
@@ -100,7 +87,6 @@ six.addEventListener("click", function(){
 
 var seven = document.getElementById("seven");
 seven.addEventListener("click", function(){
-  console.log(7);
   function newValue() {
     currentValue += "7";
     document.getElementById("display").value = currentValue;
@@ -110,7 +96,6 @@ seven.addEventListener("click", function(){
 
 var eight = document.getElementById("eight");
 eight.addEventListener("click", function(){
-  console.log(8);
   function newValue() {
     currentValue += "8";
     document.getElementById("display").value = currentValue;
@@ -120,7 +105,6 @@ eight.addEventListener("click", function(){
 
 var nine = document.getElementById("nine");
 nine.addEventListener("click", function(){
-  console.log(9);
   function newValue() {
     currentValue += "9";
     document.getElementById("display").value = currentValue;
@@ -130,7 +114,6 @@ nine.addEventListener("click", function(){
 
 var zero = document.getElementById("zero");
 zero.addEventListener("click", function(){
-  console.log(0);
   function newValue() {
     currentValue += "0";
     document.getElementById("display").value = currentValue;
@@ -140,7 +123,6 @@ zero.addEventListener("click", function(){
 
 var decimal = document.getElementById("decimal");
 decimal.addEventListener("click", function(){
-  console.log(".");
   function newValue() {
     currentValue += ".";
     document.getElementById("display").value = currentValue;
@@ -153,41 +135,33 @@ decimal.addEventListener("click", function(){
 /////////////////////////////////////////
 var divide = document.getElementById("divide");
 divide.addEventListener("click", function(){
-  console.log("/");
   myArray.push(currentValue);
   myArray.push("/");
   currentValue = "";
-  console.log(myArray);
   document.getElementById("display").value = currentValue;
 });
 
 var multiply = document.getElementById("multiply");
 multiply.addEventListener("click", function(){
-  console.log("*");
   myArray.push(currentValue);
   myArray.push("*");
   currentValue = "";
-  console.log(myArray);
   document.getElementById("display").value = currentValue;
 });
 
 var subtract = document.getElementById("subtract");
 subtract.addEventListener("click", function(){
-  console.log("-");
   myArray.push(currentValue);
   myArray.push("-");
   currentValue = "";
-  console.log(myArray);
   document.getElementById("display").value = currentValue;
 });
 
 var addition = document.getElementById("addition");
 addition.addEventListener("click", function(){
-  console.log("+");
   myArray.push(currentValue);
   myArray.push("+");
   currentValue = "";
-  console.log(myArray);
   document.getElementById("display").value = currentValue;
 });
 
@@ -197,10 +171,8 @@ addition.addEventListener("click", function(){
 
 var equals = document.getElementById("equals");
 equals.addEventListener("click", function(){
-  console.log("===");
   myArray.push(currentValue);
   currentValue = "";
-  console.log(myArray);
   if(myArray[1] === "/") {
     division(myArray[0],myArray[2]);
   } else if(myArray[1] === "*") {
@@ -224,7 +196,6 @@ equals.addEventListener("click", function(){
 
 var clear = document.getElementById("clear");
 clear.addEventListener("click", function(){
-  console.log("CLEAR");
   currentValue = "";
   myArray = [];
   document.getElementById("display").value = currentValue;
